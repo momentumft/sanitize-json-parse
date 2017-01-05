@@ -1,0 +1,5 @@
+---
+  extends: "@mft/eslint-config-momentumft"
+
+  rules:
+    max-nested-callbacks: 0

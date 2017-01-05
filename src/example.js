@@ -2,14 +2,14 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const sanitize = require("./index")
 
-const fakeDBCall = (query) => {
+const fakeDBCall = () => {
   return {success: true}
 }
 
 const patchedDbCall = sanitize(fakeDBCall)
 
-const makeQuery = (rawQuery) => {
-  return {abc:123}
+const makeQuery = () => {
+  return {abc: 123}
 }
 
 const app = express()
